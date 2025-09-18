@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Two Column Layout with Floats and Grid</title>
+  <style>
+    /* Basic Reset */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #34495e;
+      margin-bottom: 30px;
+    }
+
+    /* Container using simple grid system */
+    .container {
+      width: 90%;
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Grid row */
+    .row {
+      width: 100%;
+      overflow: hidden; /* Clear floats */
+    }
+
+    /* Grid columns (12 column system) */
+    /* Each column = 8.33% width (100% / 12) */
+    .col-6 {
+      float: left;
+      width: 50%; /* 6 out of 12 columns = 50% */
+      padding: 15px;
+    }
+
+    /* Styling columns */
+    .left-column {
+      background-color: #74b9ff;
+      color: white;
+      border-radius: 10px;
+      padding: 20px;
+      min-height: 300px;
+    }
+
+    .right-column {
+      background-color: #fd79a8;
+      color: white;
+      border-radius: 10px;
+      padding: 20px;
+      min-height: 300px;
+    }
+
+    /* Responsive: stack columns on small screens */
+    @media (max-width: 600px) {
+      .col-6 {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
+    /* Some text styling */
+    p {
+      line-height: 1.5;
+      font-size: 16px;
+    }
+
+    /* Add some header styles inside columns */
+    .left-column h2,
+    .right-column h2 {
+      margin-top: 0;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Two-Column Layout Using Floats & Grid</h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-6 left-column">
+        <h2>Left Column</h2>
+        <p>This is the left column. It uses 6 columns out of a 12-column grid system, which means it takes up 50% of the container width. Floats are used to position this column beside the right one.</p>
+        <p>You can add any content here, like text, images, or lists. This layout is responsive and will stack vertically on smaller screens.</p>
+      </div>
+      <div class="col-6 right-column">
+        <h2>Right Column</h2>
+        <p>The right column also uses 6 columns out of 12, so it takes the other 50% of the container. The pink background and white text create a nice contrast.</p>
+        <p>Feel free to customize the colors or content as you like to make it your own!</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

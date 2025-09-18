@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Class Schedule</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f8f9d2, #e0c3fc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .schedule-container {
+      background-color: white;
+      padding: 20px 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #6c5ce7;
+      color: white;
+    }
+
+    td {
+      font-weight: bold;
+    }
+
+    /* Subject Colors */
+    .linux { background-color: #fab1a0; }
+    .cprog { background-color: #74b9ff; }
+    .math { background-color: #ffeaa7; }
+    .digitallogic { background-color: #a29bfe; }
+    .uhv { background-color: #81ecec; }
+    .webdesign { background-color: #fdcb6e; }
+    .break { background-color: #dfe6e9; font-style: italic; }
+
+  </style>
+</head>
+<body>
+
+  <div class="schedule-container">
+    <h2>📅 Weekly Class Schedule</h2>
+    <table>
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+      <tr>
+        <td>9:10 - 10:00</td>
+        <td class="linux">Linux</td>
+        <td class="cprog">C Programming</td>
+        <td class="math">Math</td>
+        <td class="digitallogic">Digital Logic</td>
+        <td class="webdesign">Web Design</td>
+      </tr>
+      <tr>
+        <td>10:00 - 10:50</td>
+        <td class="cprog">C Programming</td>
+        <td class="math">Math</td>
+        <td class="linux">Linux</td>
+        <td class="uhv">UHV</td>
+        <td class="digitallogic">Digital Logic</td>
+      </tr>
+      <tr>
+        <td>10:50 - 11:40</td>
+        <td class="math">Math</td>
+        <td class="linux">Linux</td>
+        <td class="webdesign">Web Design</td>
+        <td class="cprog">C Programming</td>
+        <td class="uhv">UHV</td>
+      </tr>
+      <tr>
+        <td>11:40 - 12:30</td>
+        <td class="break">Break</td>
+        <td class="break">Break</td>
+        <td class="break">Break</td>
+        <td class="break">Break</td>
+        <td class="break">Break</td>
+      </tr>
+      <tr>
+        <td>12:30 - 1:20</td>
+        <td class="digitallogic">Digital Logic</td>
+        <td class="webdesign">Web Design</td>
+        <td class="uhv">UHV</td>
+        <td class="math">Math</td>
+        <td class="linux">Linux</td>
+      </tr>
+      <tr>
+        <td>1:20 - 2:10</td>
+        <td class="webdesign">Web Design</td>
+        <td class="uhv">UHV</td>
+        <td class="cprog">C Programming</td>
+        <td class="linux">Linux</td>
+        <td class="math">Math</td>
+      </tr>
+      <tr>
+        <td>2:10 - 3:00</td>
+        <td class="uhv">UHV</td>
+        <td class="digitallogic">Digital Logic</td>
+        <td class="math">Math</td>
+        <td class="webdesign">Web Design</td>
+        <td class="cprog">C Programming</td>
+      </tr>
+      <tr>
+        <td>3:00 - 3:50</td>
+        <td class="break">Break / Free</td>
+        <td class="break">Break / Free</td>
+        <td class="break">Break / Free</td>
+        <td class="break">Break / Free</td>
+        <td class="break">Break / Free</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MY PROFILE PAGE</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .profile-card {
+      background-color: white;
+      width: 350px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+      color: #ff6347; /* tomato color */
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .bio {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .contact-info {
+      text-align: left;
+      margin-bottom: 25px;
+    }
+
+    .contact-info h3 {
+      margin-bottom: 8px;
+      color: #ff6347;
+      border-bottom: 2px solid #ff6347;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .skills {
+      text-align: left;
+    }
+
+    .skills h3 {
+      color: #ff6347;
+      border-bottom: 2px solid #ff6347;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .skill {
+      margin-bottom: 15px;
+    }
+
+    .skill-name {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .skill-bar {
+      background-color: #eee;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 14px;
+    }
+
+    .skill-level {
+      height: 100%;
+      background-color: #009AFF;
+      border-radius: 20px 0 0 20px;
+    }
+
+    /* Skill widths */
+    .html { width: 90%; }
+    .css { width: 85%; }
+    .js { width: 70%; }
+    .python { width: 60%; }
+
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <h1>MY PROFILE PAGE</h1>
+
+    <div class="name">K R LAVANYA</div>
+    <div class="bio">
+      A passionate student learning web development and coding. Loves to
+      create clean and user-friendly websites.
+    </div>
+
+    <div class="contact-info">
+      <h3>Contact Info</h3>
+      <p>Email: lavanya@example.com</p>
+      <p>Phone: +123 456 7890</p>
+      <p>Location: Banglore, INDIA</p>
+    </div>
+
+    <div class="skills">
+      <h3>Skills</h3>
+
+      <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar">
+          <div class="skill-level html"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar">
+          <div class="skill-level css"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-bar">
+          <div class="skill-level js"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Python</div>
+        <div class="skill-bar">
+          <div class="skill-level python"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
